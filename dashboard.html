@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard · Smart Employee Management Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="app-shell">
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-mark">SE</span>
+        <span class="brand-text">SmartEmploy HR<small>Management Suite</small></span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Main</div>
+        <ul>
+          <li class="active"><a href="dashboard.html"><i class="fa-solid fa-grid-2"></i> Dashboard</a></li>
+          <li><a href="employees.html"><i class="fa-solid fa-users"></i> Employees</a></li>
+          <li><a href="add-employee.html"><i class="fa-solid fa-user-plus"></i> Add Employee</a></li>
+          <li><a href="reports.html"><i class="fa-solid fa-chart-pie"></i> Reports</a></li>
+        </ul>
+
+        <div class="nav-label">Workspace</div>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Attendance</a></li>
+          <li><a href="#"><i class="fa-solid fa-money-check-dollar"></i> Payroll</a></li>
+          <li><a href="#"><i class="fa-solid fa-briefcase"></i> Recruitment <span class="nav-badge">5</span></a></li>
+          <li><a href="#"><i class="fa-solid fa-comments"></i> Messages</a></li>
+        </ul>
+
+        <div class="nav-label">Account</div>
+        <ul>
+          <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+          <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="profile.html" class="sidebar-user">
+          <span class="avatar-initials">MK</span>
+          <span>
+            <span class="u-name" style="display:block;">Monika Kumari</span>
+            <span class="u-role">HR Manager</span>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ============ MAIN ============ -->
+    <div class="main-content">
+
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="topbar-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search employees, departments, reports…" />
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" aria-label="Notifications"><i class="fa-regular fa-bell"></i><span class="dot"></span></button>
+          <button class="icon-btn" aria-label="Messages"><i class="fa-regular fa-envelope"></i></button>
+          <div class="topbar-divider"></div>
+          <a href="profile.html" class="topbar-profile">
+            <span class="avatar-initials">MK</span>
+            <span>
+              <span class="p-name" style="display:block;">Monika Kumari</span>
+              <span class="p-role">HR Manager</span>
+            </span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+        </div>
+      </header>
+
+      <div class="page-content">
+
+        <div class="page-header">
+          <div>
+            <div class="breadcrumb">SmartEmploy HR / <span>Dashboard</span></div>
+            <h1>Good morning, Monika 👋</h1>
+            <p>Here's what's happening across your organization today.</p>
+          </div>
+          <div class="header-actions">
+            <a href="reports.html" class="btn btn-outline"><i class="fa-solid fa-file-export"></i> Export Report</a>
+            <a href="add-employee.html" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Employee</a>
+          </div>
+        </div>
+
+        <!-- Welcome Card -->
+        <div class="welcome-card">
+          <div class="welcome-text">
+            <span class="eyebrow">Weekly Summary</span>
+            <h2>Your team's attendance is up 4.2% this week</h2>
+            <p>248 employees across 12 departments logged in on time this week — the highest weekly average this quarter. Keep the momentum going with the new performance report.</p>
+          </div>
+          <div class="welcome-actions">
+            <a href="reports.html" class="btn btn-outline"><i class="fa-solid fa-chart-line"></i> View Full Report</a>
+            <a href="employees.html" class="btn btn-outline"><i class="fa-solid fa-users"></i> Manage Team</a>
+          </div>
+        </div>
+
+        <!-- Stat Cards -->
+        <div class="stats-grid">
+
+          <div class="stat-card glass-card">
+            <div class="stat-top">
+              <div class="stat-icon blue"><i class="fa-solid fa-users"></i></div>
+              <span class="stat-trend up"><i class="fa-solid fa-arrow-trend-up"></i> 3.1%</span>
+            </div>
+            <div>
+              <div class="stat-value">248</div>
+              <div class="stat-label">Total Employees</div>
+            </div>
+            <div class="stat-bar"><span style="width: 78%;"></span></div>
+          </div>
+
+          <div class="stat-card glass-card">
+            <div class="stat-top">
+              <div class="stat-icon violet"><i class="fa-solid fa-building"></i></div>
+              <span class="stat-trend up"><i class="fa-solid fa-arrow-trend-up"></i> 1.0%</span>
+            </div>
+            <div>
+              <div class="stat-value">12</div>
+              <div class="stat-label">Departments</div>
+            </div>
+            <div class="stat-bar"><span style="width: 60%;"></span></div>
+          </div>
+
+          <div class="stat-card glass-card">
+            <div class="stat-top">
+              <div class="stat-icon teal"><i class="fa-solid fa-calendar-check"></i></div>
+              <span class="stat-trend up"><i class="fa-solid fa-arrow-trend-up"></i> 4.2%</span>
+            </div>
+            <div>
+              <div class="stat-value">96.4%</div>
+              <div class="stat-label">Attendance Rate</div>
+            </div>
+            <div class="stat-bar"><span style="width: 96%;"></span></div>
+          </div>
+
+          <div class="stat-card glass-card">
+            <div class="stat-top">
+              <div class="stat-icon amber"><i class="fa-solid fa-gauge-high"></i></div>
+              <span class="stat-trend down"><i class="fa-solid fa-arrow-trend-down"></i> 0.8%</span>
+            </div>
+            <div>
+              <div class="stat-value">88.2%</div>
+              <div class="stat-label">Avg. Performance</div>
+            </div>
+            <div class="stat-bar"><span style="width: 88%;"></span></div>
+          </div>
+
+        </div>
+
+        <!-- Table + Side Panels -->
+        <div class="dash-grid">
+
+          <div class="panel glass-card">
+            <div class="panel-header">
+              <div>
+                <h3>Employee Overview</h3>
+                <div class="panel-sub">Most recently active team members</div>
+              </div>
+              <a href="employees.html" class="panel-link">View all <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Employee</th>
+                    <th>Department</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Joined</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="emp-cell">
+                        <span class="avatar-initials" style="background:linear-gradient(135deg,#3b82f6,#0f2247);">RS</span>
+                        <div><div class="e-name">Rohit Sharma</div><div class="e-mail">rohit.sharma@smartemploy.com</div></div>
+                      </div>
+                    </td>
+                    <td>Engineering</td>
+                    <td>Frontend Developer</td>
+                    <td><span class="badge success">Active</span></td>
+                    <td>12 Jan 2023</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="emp-cell">
+                        <span class="avatar-initials" style="background:linear-gradient(135deg,#a78bfa,#7c3aed);">PN</span>
+                        <div><div class="e-name">Priya Nair</div><div class="e-mail">priya.nair@smartemploy.com</div></div>
+                      </div>
+                    </td>
+                    <td>Design</td>
+                    <td>UI/UX Designer</td>
+                    <td><span class="badge success">Active</span></td>
+                    <td>03 Mar 2022</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="emp-cell">
+                        <span class="avatar-initials" style="background:linear-gradient(135deg,#14b8a6,#0d9488);">AV</span>
+                        <div><div class="e-name">Arjun Verma</div><div class="e-mail">arjun.verma@smartemploy.com</div></div>
+                      </div>
+                    </td>
+                    <td>Marketing</td>
+                    <td>Content Strategist</td>
+                    <td><span class="badge warning">On Leave</span></td>
+                    <td>21 Jul 2023</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="emp-cell">
+                        <span class="avatar-initials" style="background:linear-gradient(135deg,#f6ad55,#dd6b20);">SM</span>
+                        <div><div class="e-name">Sneha Mehta</div><div class="e-mail">sneha.mehta@smartemploy.com</div></div>
+                      </div>
+                    </td>
+                    <td>Human Resources</td>
+                    <td>HR Executive</td>
+                    <td><span class="badge success">Active</span></td>
+                    <td>09 Sep 2021</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="emp-cell">
+                        <span class="avatar-initials" style="background:linear-gradient(135deg,#f472b6,#db2777);">KJ</span>
+                        <div><div class="e-name">Karan Joshi</div><div class="e-mail">karan.joshi@smartemploy.com</div></div>
+                      </div>
+                    </td>
+                    <td>Finance</td>
+                    <td>Financial Analyst</td>
+                    <td><span class="badge danger">Inactive</span></td>
+                    <td>17 Nov 2020</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:22px;">
+
+            <div class="panel glass-card">
+              <div class="panel-header">
+                <h3>Recent Activities</h3>
+              </div>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <span class="activity-icon blue"><i class="fa-solid fa-user-plus"></i></span>
+                  <div>
+                    <div class="activity-text"><strong>Sneha Mehta</strong> onboarded 2 new employees</div>
+                    <div class="activity-time">10 minutes ago</div>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <span class="activity-icon green"><i class="fa-solid fa-circle-check"></i></span>
+                  <div>
+                    <div class="activity-text"><strong>Rohit Sharma</strong> completed Q2 performance review</div>
+                    <div class="activity-time">1 hour ago</div>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <span class="activity-icon amber"><i class="fa-solid fa-calendar-xmark"></i></span>
+                  <div>
+                    <div class="activity-text"><strong>Arjun Verma</strong> requested leave for 3 days</div>
+                    <div class="activity-time">3 hours ago</div>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <span class="activity-icon red"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+                  <div>
+                    <div class="activity-text"><strong>Payroll</strong> processed for Finance dept.</div>
+                    <div class="activity-time">Yesterday, 6:40 PM</div>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <span class="activity-icon blue"><i class="fa-solid fa-clipboard-list"></i></span>
+                  <div>
+                    <div class="activity-text"><strong>Priya Nair</strong> submitted a new design report</div>
+                    <div class="activity-time">Yesterday, 4:12 PM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel glass-card">
+              <div class="panel-header">
+                <h3>Departments</h3>
+              </div>
+              <div class="dept-row">
+                <span class="dept-name">Engineering</span>
+                <div class="stat-bar"><span style="width:82%;"></span></div>
+                <span class="dept-pct">82%</span>
+              </div>
+              <div class="dept-row">
+                <span class="dept-name">Design</span>
+                <div class="stat-bar"><span style="width:64%;"></span></div>
+                <span class="dept-pct">64%</span>
+              </div>
+              <div class="dept-row">
+                <span class="dept-name">Marketing</span>
+                <div class="stat-bar"><span style="width:71%;"></span></div>
+                <span class="dept-pct">71%</span>
+              </div>
+              <div class="dept-row">
+                <span class="dept-name">Finance</span>
+                <div class="stat-bar"><span style="width:48%;"></span></div>
+                <span class="dept-pct">48%</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+          <div class="footer-brand"><span class="brand-mark">SE</span> SmartEmploy HR</div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Help Center</a>
+          </div>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </footer>
+        <p style="text-align:center; color:var(--gray-400); font-size:0.78rem; padding:16px 0 28px;">© 2026 SmartEmploy HR. Crafted as a frontend portfolio project.</p>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+

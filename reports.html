@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reports · Smart Employee Management Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-mark">SE</span>
+        <span class="brand-text">SmartEmploy HR<small>Management Suite</small></span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Main</div>
+        <ul>
+          <li><a href="dashboard.html"><i class="fa-solid fa-grid-2"></i> Dashboard</a></li>
+          <li><a href="employees.html"><i class="fa-solid fa-users"></i> Employees</a></li>
+          <li><a href="add-employee.html"><i class="fa-solid fa-user-plus"></i> Add Employee</a></li>
+          <li class="active"><a href="reports.html"><i class="fa-solid fa-chart-pie"></i> Reports</a></li>
+        </ul>
+
+        <div class="nav-label">Workspace</div>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Attendance</a></li>
+          <li><a href="#"><i class="fa-solid fa-money-check-dollar"></i> Payroll</a></li>
+          <li><a href="#"><i class="fa-solid fa-briefcase"></i> Recruitment <span class="nav-badge">5</span></a></li>
+          <li><a href="#"><i class="fa-solid fa-comments"></i> Messages</a></li>
+        </ul>
+
+        <div class="nav-label">Account</div>
+        <ul>
+          <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+          <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="profile.html" class="sidebar-user">
+          <span class="avatar-initials">MK</span>
+          <span>
+            <span class="u-name" style="display:block;">Monika Kumari</span>
+            <span class="u-role">HR Manager</span>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <header class="topbar">
+        <div class="topbar-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search employees, departments, reports…" />
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" aria-label="Notifications"><i class="fa-regular fa-bell"></i><span class="dot"></span></button>
+          <button class="icon-btn" aria-label="Messages"><i class="fa-regular fa-envelope"></i></button>
+          <div class="topbar-divider"></div>
+          <a href="profile.html" class="topbar-profile">
+            <span class="avatar-initials">MK</span>
+            <span>
+              <span class="p-name" style="display:block;">Monika Kumari</span>
+              <span class="p-role">HR Manager</span>
+            </span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+        </div>
+      </header>
+
+      <div class="page-content">
+
+        <div class="page-header">
+          <div>
+            <div class="breadcrumb">SmartEmploy HR / <span>Reports</span></div>
+            <h1>Reports &amp; Analytics</h1>
+            <p>Organization-wide performance, attendance, and headcount insights.</p>
+          </div>
+          <div class="header-actions">
+            <select style="padding:11px 16px; border-radius:10px; border:1.5px solid var(--gray-200); background:var(--white); font-size:0.86rem; font-weight:600; color:var(--gray-700);">
+              <option>This Quarter</option>
+              <option>Last Quarter</option>
+              <option>This Year</option>
+            </select>
+            <button class="btn btn-primary"><i class="fa-solid fa-download"></i> Export PDF</button>
+          </div>
+        </div>
+
+        <!-- Progress Rings -->
+        <div class="ring-row" style="margin-bottom:22px;">
+          <div class="ring-card glass-card">
+            <div class="progress-ring" style="background:conic-gradient(var(--blue-600) 0% 96%, var(--gray-200) 96% 100%);">
+              <span>96%</span>
+            </div>
+            <div class="ring-label">Attendance Rate</div>
+          </div>
+          <div class="ring-card glass-card">
+            <div class="progress-ring" style="background:conic-gradient(#14b8a6 0% 88%, var(--gray-200) 88% 100%);">
+              <span>88%</span>
+            </div>
+            <div class="ring-label">Avg. Performance</div>
+          </div>
+          <div class="ring-card glass-card">
+            <div class="progress-ring" style="background:conic-gradient(#a78bfa 0% 74%, var(--gray-200) 74% 100%);">
+              <span>74%</span>
+            </div>
+            <div class="ring-label">Goal Completion</div>
+          </div>
+        </div>
+
+        <div class="report-grid">
+
+          <div class="panel glass-card">
+            <div class="panel-header">
+              <div>
+                <h3>Monthly Attendance Overview</h3>
+                <div class="panel-sub">Average attendance rate by month (%)</div>
+              </div>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-col"><div class="bar" style="height:70%;"><span class="bar-value">88%</span></div><span class="bar-name">Jan</span></div>
+              <div class="bar-col"><div class="bar" style="height:78%;"><span class="bar-value">91%</span></div><span class="bar-name">Feb</span></div>
+              <div class="bar-col"><div class="bar" style="height:66%;"><span class="bar-value">85%</span></div><span class="bar-name">Mar</span></div>
+              <div class="bar-col"><div class="bar" style="height:84%;"><span class="bar-value">93%</span></div><span class="bar-name">Apr</span></div>
+              <div class="bar-col"><div class="bar" style="height:90%;"><span class="bar-value">95%</span></div><span class="bar-name">May</span></div>
+              <div class="bar-col"><div class="bar" style="height:97%;"><span class="bar-value">96.4%</span></div><span class="bar-name">Jun</span></div>
+            </div>
+          </div>
+
+          <div class="panel glass-card">
+            <div class="panel-header">
+              <h3>Workforce by Department</h3>
+            </div>
+            <div class="donut-wrap">
+              <div class="donut">
+                <div class="donut-center"><strong>248</strong><span>Employees</span></div>
+              </div>
+              <div class="legend">
+                <div class="legend-item"><span class="legend-dot" style="background:var(--blue-600);"></span>Engineering <strong>42%</strong></div>
+                <div class="legend-item"><span class="legend-dot" style="background:var(--sky-300);"></span>Marketing <strong>26%</strong></div>
+                <div class="legend-item"><span class="legend-dot" style="background:#a78bfa;"></span>Design <strong>17%</strong></div>
+                <div class="legend-item"><span class="legend-dot" style="background:var(--gray-200);"></span>Others <strong>15%</strong></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="dash-grid">
+
+          <div class="panel glass-card">
+            <div class="panel-header">
+              <div>
+                <h3>Top Performing Employees</h3>
+                <div class="panel-sub">Ranked by Q2 performance score</div>
+              </div>
+              <a href="employees.html" class="panel-link">View all <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr><th>Employee</th><th>Department</th><th>Score</th><th>Trend</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><div class="emp-cell"><span class="avatar-initials" style="background:linear-gradient(135deg,#3b82f6,#0f2247);">RS</span><div class="e-name">Rohit Sharma</div></div></td>
+                    <td>Engineering</td>
+                    <td>4.9 / 5</td>
+                    <td><span class="stat-trend up"><i class="fa-solid fa-arrow-trend-up"></i> 6%</span></td>
+                  </tr>
+                  <tr>
+                    <td><div class="emp-cell"><span class="avatar-initials" style="background:linear-gradient(135deg,#a78bfa,#7c3aed);">PN</span><div class="e-name">Priya Nair</div></div></td>
+                    <td>Design</td>
+                    <td>4.8 / 5</td>
+                    <td><span class="stat-trend up"><i class="fa-solid fa-arrow-trend-up"></i> 4%</span></td>
+                  </tr>
+                  <tr>
+                    <td><div class="emp-cell"><span class="avatar-initials" style="background:linear-gradient(135deg,#fbbf24,#b45309);">VD</span><div class="e-name">Vikram Desai</div></div></td>
+                    <td>Operations</td>
+                    <td>4.7 / 5</td>
+                    <td><span class="stat-trend down"><i class="fa-solid fa-arrow-trend-down"></i> 1%</span></td>
+                  </tr>
+                  <tr>
+                    <td><div class="emp-cell"><span class="avatar-initials" style="background:linear-gradient(135deg,#34d399,#059669);">IS</span><div class="e-name">Isha Singh</div></div></td>
+                    <td>Design</td>
+                    <td>4.6 / 5</td>
+                    <td><span class="stat-trend up"><i class="fa-solid fa-arrow-trend-up"></i> 3%</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="panel glass-card">
+            <div class="panel-header"><h3>Hiring Trend</h3></div>
+            <div class="trend-line" style="margin-bottom:8px;">
+              <span style="height:35%;"></span><span style="height:52%;"></span><span style="height:40%;"></span>
+              <span style="height:68%;"></span><span style="height:60%;"></span><span style="height:80%;"></span>
+              <span style="height:74%;"></span><span style="height:92%;"></span><span style="height:85%;"></span>
+              <span style="height:100%;"></span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:0.76rem; color:var(--gray-400);">
+              <span>Jan</span><span>Jun</span>
+            </div>
+            <p style="font-size:0.84rem; color:var(--gray-600); margin-top:16px;">
+              New hires have grown steadily this year, with a <strong style="color:var(--success);">32% increase</strong> in Engineering and Design headcount since January.
+            </p>
+          </div>
+
+        </div>
+
+        <footer class="app-footer">
+          <div class="footer-brand"><span class="brand-mark">SE</span> SmartEmploy HR</div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Help Center</a>
+          </div>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </footer>
+        <p style="text-align:center; color:var(--gray-400); font-size:0.78rem; padding:16px 0 28px;">© 2026 SmartEmploy HR. Crafted as a frontend portfolio project.</p>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+

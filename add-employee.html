@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Employee · Smart Employee Management Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-mark">SE</span>
+        <span class="brand-text">SmartEmploy HR<small>Management Suite</small></span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Main</div>
+        <ul>
+          <li><a href="dashboard.html"><i class="fa-solid fa-grid-2"></i> Dashboard</a></li>
+          <li><a href="employees.html"><i class="fa-solid fa-users"></i> Employees</a></li>
+          <li class="active"><a href="add-employee.html"><i class="fa-solid fa-user-plus"></i> Add Employee</a></li>
+          <li><a href="reports.html"><i class="fa-solid fa-chart-pie"></i> Reports</a></li>
+        </ul>
+
+        <div class="nav-label">Workspace</div>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Attendance</a></li>
+          <li><a href="#"><i class="fa-solid fa-money-check-dollar"></i> Payroll</a></li>
+          <li><a href="#"><i class="fa-solid fa-briefcase"></i> Recruitment <span class="nav-badge">5</span></a></li>
+          <li><a href="#"><i class="fa-solid fa-comments"></i> Messages</a></li>
+        </ul>
+
+        <div class="nav-label">Account</div>
+        <ul>
+          <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+          <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="profile.html" class="sidebar-user">
+          <span class="avatar-initials">MK</span>
+          <span>
+            <span class="u-name" style="display:block;">Monika Kumari</span>
+            <span class="u-role">HR Manager</span>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <header class="topbar">
+        <div class="topbar-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search employees, departments, reports…" />
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" aria-label="Notifications"><i class="fa-regular fa-bell"></i><span class="dot"></span></button>
+          <button class="icon-btn" aria-label="Messages"><i class="fa-regular fa-envelope"></i></button>
+          <div class="topbar-divider"></div>
+          <a href="profile.html" class="topbar-profile">
+            <span class="avatar-initials">MK</span>
+            <span>
+              <span class="p-name" style="display:block;">Monika Kumari</span>
+              <span class="p-role">HR Manager</span>
+            </span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+        </div>
+      </header>
+
+      <div class="page-content">
+
+        <div class="page-header">
+          <div>
+            <div class="breadcrumb">SmartEmploy HR / Employees / <span>Add Employee</span></div>
+            <h1>Add New Employee</h1>
+            <p>Fill in the details below to onboard a new team member.</p>
+          </div>
+          <div class="header-actions">
+            <a href="employees.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Cancel</a>
+          </div>
+        </div>
+
+        <form class="panel glass-card form-card" action="employees.html" method="get">
+
+          <!-- Profile Photo -->
+          <div class="form-section">
+            <div class="form-section-title"><i class="fa-solid fa-image"></i> Profile Photo</div>
+            <div class="form-section-desc">Upload a professional photo. JPG or PNG, max 2MB.</div>
+            <div class="upload-zone">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <div><strong>Click to upload</strong> or drag and drop</div>
+            </div>
+          </div>
+
+          <!-- Personal Details -->
+          <div class="form-section">
+            <div class="form-section-title"><i class="fa-solid fa-id-card"></i> Personal Details</div>
+            <div class="form-section-desc">Basic identification information for the employee record.</div>
+            <div class="form-grid">
+              <div class="field">
+                <label>Full Name <span class="req">*</span></label>
+                <input type="text" placeholder="e.g. Ananya Gupta" required />
+              </div>
+              <div class="field">
+                <label>Email Address <span class="req">*</span></label>
+                <input type="email" placeholder="ananya.gupta@smartemploy.com" required />
+              </div>
+              <div class="field">
+                <label>Phone Number <span class="req">*</span></label>
+                <input type="tel" placeholder="+91 90000 00000" required />
+              </div>
+              <div class="field">
+                <label>Date of Birth</label>
+                <input type="date" />
+              </div>
+              <div class="field">
+                <label>Gender</label>
+                <select>
+                  <option>Select gender</option>
+                  <option>Female</option>
+                  <option>Male</option>
+                  <option>Other</option>
+                  <option>Prefer not to say</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Location</label>
+                <input type="text" placeholder="City, State" />
+              </div>
+              <div class="field full">
+                <label>Residential Address</label>
+                <textarea placeholder="House no., street, city, PIN code"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job Details -->
+          <div class="form-section">
+            <div class="form-section-title"><i class="fa-solid fa-briefcase"></i> Job Details</div>
+            <div class="form-section-desc">Role, department and reporting structure.</div>
+            <div class="form-grid">
+              <div class="field">
+                <label>Employee ID <span class="req">*</span></label>
+                <input type="text" placeholder="#SE-1050" required />
+              </div>
+              <div class="field">
+                <label>Designation <span class="req">*</span></label>
+                <input type="text" placeholder="e.g. Backend Developer" required />
+              </div>
+              <div class="field">
+                <label>Department <span class="req">*</span></label>
+                <select required>
+                  <option>Select department</option>
+                  <option>Engineering</option>
+                  <option>Design</option>
+                  <option>Marketing</option>
+                  <option>Finance</option>
+                  <option>Human Resources</option>
+                  <option>Operations</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Reporting Manager</label>
+                <select>
+                  <option>Select manager</option>
+                  <option>Monika Kumari</option>
+                  <option>Rohit Sharma</option>
+                  <option>Vikram Desai</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Date of Joining <span class="req">*</span></label>
+                <input type="date" required />
+              </div>
+              <div class="field">
+                <label>Employment Type</label>
+                <select>
+                  <option>Full-time</option>
+                  <option>Part-time</option>
+                  <option>Contract</option>
+                  <option>Intern</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Work Location</label>
+                <select>
+                  <option>On-site</option>
+                  <option>Remote</option>
+                  <option>Hybrid</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Status</label>
+                <select>
+                  <option>Active</option>
+                  <option>On Leave</option>
+                  <option>Inactive</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Compensation -->
+          <div class="form-section">
+            <div class="form-section-title"><i class="fa-solid fa-sack-dollar"></i> Compensation</div>
+            <div class="form-section-desc">Confidential — visible only to HR and Finance roles.</div>
+            <div class="form-grid">
+              <div class="field">
+                <label>Annual CTC (₹)</label>
+                <input type="number" placeholder="e.g. 950000" />
+              </div>
+              <div class="field">
+                <label>Pay Grade</label>
+                <select>
+                  <option>Select grade</option>
+                  <option>L1 — Associate</option>
+                  <option>L2 — Senior Associate</option>
+                  <option>L3 — Lead</option>
+                  <option>L4 — Manager</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label>Notes</label>
+                <textarea placeholder="Any additional notes for HR records…"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <a href="employees.html" class="btn btn-outline">Discard</a>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-check"></i> Save Employee</button>
+          </div>
+
+        </form>
+
+        <footer class="app-footer">
+          <div class="footer-brand"><span class="brand-mark">SE</span> SmartEmploy HR</div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Help Center</a>
+          </div>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </footer>
+        <p style="text-align:center; color:var(--gray-400); font-size:0.78rem; padding:16px 0 28px;">© 2026 SmartEmploy HR. Crafted as a frontend portfolio project.</p>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+

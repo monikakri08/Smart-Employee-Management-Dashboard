@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile · Smart Employee Management Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-mark">SE</span>
+        <span class="brand-text">SmartEmploy HR<small>Management Suite</small></span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Main</div>
+        <ul>
+          <li><a href="dashboard.html"><i class="fa-solid fa-grid-2"></i> Dashboard</a></li>
+          <li><a href="employees.html"><i class="fa-solid fa-users"></i> Employees</a></li>
+          <li><a href="add-employee.html"><i class="fa-solid fa-user-plus"></i> Add Employee</a></li>
+          <li><a href="reports.html"><i class="fa-solid fa-chart-pie"></i> Reports</a></li>
+        </ul>
+
+        <div class="nav-label">Workspace</div>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Attendance</a></li>
+          <li><a href="#"><i class="fa-solid fa-money-check-dollar"></i> Payroll</a></li>
+          <li><a href="#"><i class="fa-solid fa-briefcase"></i> Recruitment <span class="nav-badge">5</span></a></li>
+          <li><a href="#"><i class="fa-solid fa-comments"></i> Messages</a></li>
+        </ul>
+
+        <div class="nav-label">Account</div>
+        <ul>
+          <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+          <li class="active"><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="profile.html" class="sidebar-user">
+          <span class="avatar-initials">MK</span>
+          <span>
+            <span class="u-name" style="display:block;">Monika Kumari</span>
+            <span class="u-role">HR Manager</span>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <header class="topbar">
+        <div class="topbar-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search employees, departments, reports…" />
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" aria-label="Notifications"><i class="fa-regular fa-bell"></i><span class="dot"></span></button>
+          <button class="icon-btn" aria-label="Messages"><i class="fa-regular fa-envelope"></i></button>
+          <div class="topbar-divider"></div>
+          <a href="profile.html" class="topbar-profile">
+            <span class="avatar-initials">MK</span>
+            <span>
+              <span class="p-name" style="display:block;">Monika Kumari</span>
+              <span class="p-role">HR Manager</span>
+            </span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+        </div>
+      </header>
+
+      <div class="page-content">
+
+        <div class="page-header">
+          <div>
+            <div class="breadcrumb">SmartEmploy HR / <span>My Profile</span></div>
+            <h1>My Profile</h1>
+            <p>Manage your personal information and account preferences.</p>
+          </div>
+          <div class="header-actions">
+            <button class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Save Changes</button>
+          </div>
+        </div>
+
+        <div class="profile-page-grid">
+
+          <div class="profile-card-side glass-card">
+            <div class="profile-avatar-lg">MK</div>
+            <h3>Monika Kumari</h3>
+            <div class="p-role">HR Manager</div>
+            <a href="#" class="btn btn-outline btn-sm"><i class="fa-solid fa-camera"></i> Change Photo</a>
+
+            <div class="profile-meta-list">
+              <div class="info-row"><span class="i-label"><i class="fa-regular fa-envelope"></i>Email</span><span class="i-value">monika.kumari@smartemploy.com</span></div>
+              <div class="info-row"><span class="i-label"><i class="fa-solid fa-phone"></i>Phone</span><span class="i-value">+91 91234 56789</span></div>
+              <div class="info-row"><span class="i-label"><i class="fa-solid fa-location-dot"></i>Location</span><span class="i-value">Patna, Bihar, IN</span></div>
+              <div class="info-row"><span class="i-label"><i class="fa-solid fa-id-badge"></i>Employee ID</span><span class="i-value">#SE-0007</span></div>
+              <div class="info-row"><span class="i-label"><i class="fa-solid fa-calendar-day"></i>Joined</span><span class="i-value">03 Jun 2019</span></div>
+            </div>
+
+            <div class="social-links-row">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:22px;">
+
+            <div class="panel glass-card form-card" style="padding:26px 28px;">
+              <div class="panel-header"><h3>Personal Information</h3></div>
+              <div class="form-grid">
+                <div class="field">
+                  <label>First Name</label>
+                  <input type="text" value="Monika" />
+                </div>
+                <div class="field">
+                  <label>Last Name</label>
+                  <input type="text" value="Kumari" />
+                </div>
+                <div class="field">
+                  <label>Email Address</label>
+                  <input type="email" value="monika.kumari@smartemploy.com" />
+                </div>
+                <div class="field">
+                  <label>Phone Number</label>
+                  <input type="tel" value="+91 91234 56789" />
+                </div>
+                <div class="field full">
+                  <label>Bio</label>
+                  <textarea>HR Manager at SmartEmploy HR with 6+ years of experience leading talent acquisition, employee engagement, and workforce analytics initiatives.</textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel glass-card form-card" style="padding:26px 28px;">
+              <div class="panel-header"><h3>Change Password</h3></div>
+              <div class="form-grid">
+                <div class="field full">
+                  <label>Current Password</label>
+                  <input type="password" placeholder="Enter current password" />
+                </div>
+                <div class="field">
+                  <label>New Password</label>
+                  <input type="password" placeholder="Enter new password" />
+                  <div class="password-strength">
+                    <span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span>
+                  </div>
+                  <div class="hint">Strong — includes letters, numbers &amp; symbols.</div>
+                </div>
+                <div class="field">
+                  <label>Confirm New Password</label>
+                  <input type="password" placeholder="Re-enter new password" />
+                </div>
+              </div>
+              <div class="form-actions">
+                <button class="btn btn-outline">Cancel</button>
+                <button class="btn btn-primary"><i class="fa-solid fa-lock"></i> Update Password</button>
+              </div>
+            </div>
+
+            <div class="panel glass-card">
+              <div class="panel-header"><h3>Preferences</h3></div>
+              <div class="setting-row">
+                <div class="setting-info"><strong>Two-Factor Authentication</strong><span>Secure your account with an additional verification step.</span></div>
+                <label class="switch"><input type="checkbox" checked /><span class="slider-track"></span></label>
+              </div>
+              <div class="setting-row">
+                <div class="setting-info"><strong>Email Notifications</strong><span>Receive product updates and account alerts.</span></div>
+                <label class="switch"><input type="checkbox" checked /><span class="slider-track"></span></label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <footer class="app-footer">
+          <div class="footer-brand"><span class="brand-mark">SE</span> SmartEmploy HR</div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Help Center</a>
+          </div>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </footer>
+        <p style="text-align:center; color:var(--gray-400); font-size:0.78rem; padding:16px 0 28px;">© 2026 SmartEmploy HR. Crafted as a frontend portfolio project.</p>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+

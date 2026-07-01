@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In · Smart Employee Management Dashboard</title>
+  <meta name="description" content="Secure sign-in to the Smart Employee Management Dashboard." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <main class="auth-page">
+
+    <!-- Left: Brand / Narrative Panel -->
+    <section class="auth-visual" aria-hidden="false">
+      <div class="auth-brand">
+        <span class="brand-mark">SE</span>
+        <span class="brand-name">SmartEmploy&nbsp;HR</span>
+      </div>
+
+      <div class="auth-copy">
+        <span class="eyebrow">Workforce Intelligence Platform</span>
+        <h1>One dashboard for your entire workforce.</h1>
+        <p>Track attendance, performance, and departmental health in real time — built for HR teams who need clarity, not clutter.</p>
+
+        <!-- Signature element: live pulse panel -->
+        <div class="pulse-panel">
+          <div class="pulse-head">
+            <span><span class="pulse-dot"></span>Live attendance pulse</span>
+            <span>Today, 09:41 AM</span>
+          </div>
+          <div class="pulse-bars" role="img" aria-label="Attendance activity graph">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="auth-foot">
+        <div><strong>248</strong>Active Employees</div>
+        <div><strong>12</strong>Departments</div>
+        <div><strong>96.4%</strong>Avg. Attendance</div>
+      </div>
+    </section>
+
+    <!-- Right: Login Form -->
+    <section class="auth-form-side">
+      <div class="auth-form-wrap">
+
+        <div class="form-head">
+          <h2>Welcome back</h2>
+          <p>Sign in to access your HR dashboard.</p>
+        </div>
+
+        <form action="dashboard.html" method="get" novalidate>
+
+          <div class="form-group">
+            <label for="email">Work email</label>
+            <div class="input-wrap">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required />
+              <i class="fa-regular fa-eye toggle-visibility"></i>
+            </div>
+          </div>
+
+          <div class="form-row-between">
+            <label class="checkbox-row">
+              <input type="checkbox" name="remember" />
+              Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            Sign In
+          </button>
+
+          <div class="demo-note">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>This is a static front-end demo. Submitting the form simply opens the dashboard preview — no data is sent anywhere.</span>
+          </div>
+
+        </form>
+
+        <div class="auth-divider">or continue with</div>
+
+        <div class="social-row">
+          <button type="button" class="social-btn"><i class="fa-brands fa-google"></i> Google</button>
+          <button type="button" class="social-btn"><i class="fa-brands fa-microsoft"></i> Microsoft</button>
+        </div>
+
+        <p class="auth-switch">Don't have an account? <a href="#">Contact your administrator</a></p>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
+

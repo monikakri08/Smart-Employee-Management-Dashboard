@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit Sharma · Employee Details</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-mark">SE</span>
+        <span class="brand-text">SmartEmploy HR<small>Management Suite</small></span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-label">Main</div>
+        <ul>
+          <li><a href="dashboard.html"><i class="fa-solid fa-grid-2"></i> Dashboard</a></li>
+          <li class="active"><a href="employees.html"><i class="fa-solid fa-users"></i> Employees</a></li>
+          <li><a href="add-employee.html"><i class="fa-solid fa-user-plus"></i> Add Employee</a></li>
+          <li><a href="reports.html"><i class="fa-solid fa-chart-pie"></i> Reports</a></li>
+        </ul>
+
+        <div class="nav-label">Workspace</div>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Attendance</a></li>
+          <li><a href="#"><i class="fa-solid fa-money-check-dollar"></i> Payroll</a></li>
+          <li><a href="#"><i class="fa-solid fa-briefcase"></i> Recruitment <span class="nav-badge">5</span></a></li>
+          <li><a href="#"><i class="fa-solid fa-comments"></i> Messages</a></li>
+        </ul>
+
+        <div class="nav-label">Account</div>
+        <ul>
+          <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+          <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="profile.html" class="sidebar-user">
+          <span class="avatar-initials">MK</span>
+          <span>
+            <span class="u-name" style="display:block;">Monika Kumari</span>
+            <span class="u-role">HR Manager</span>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <header class="topbar">
+        <div class="topbar-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search employees, departments, reports…" />
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" aria-label="Notifications"><i class="fa-regular fa-bell"></i><span class="dot"></span></button>
+          <button class="icon-btn" aria-label="Messages"><i class="fa-regular fa-envelope"></i></button>
+          <div class="topbar-divider"></div>
+          <a href="profile.html" class="topbar-profile">
+            <span class="avatar-initials">MK</span>
+            <span>
+              <span class="p-name" style="display:block;">Monika Kumari</span>
+              <span class="p-role">HR Manager</span>
+            </span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+        </div>
+      </header>
+
+      <div class="page-content">
+
+        <div class="page-header">
+          <div>
+            <div class="breadcrumb">SmartEmploy HR / Employees / <span>Rohit Sharma</span></div>
+            <h1>Employee Profile</h1>
+          </div>
+          <div class="header-actions">
+            <a href="employees.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Back to List</a>
+            <a href="add-employee.html" class="btn btn-primary"><i class="fa-solid fa-pen"></i> Edit Profile</a>
+          </div>
+        </div>
+
+        <!-- Profile Banner -->
+        <div class="profile-banner">
+          <div class="profile-cover"></div>
+          <div class="profile-id-row">
+            <div class="profile-avatar-lg">RS</div>
+            <div class="profile-id-info">
+              <h2>Rohit Sharma</h2>
+              <p>Frontend Developer &nbsp;·&nbsp; Engineering &nbsp;·&nbsp; Employee ID #SE-1042</p>
+            </div>
+            <div class="profile-id-actions">
+              <a href="#" class="btn btn-outline" style="background:rgba(255,255,255,0.9);"><i class="fa-solid fa-envelope"></i> Message</a>
+              <a href="#" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call</a>
+            </div>
+          </div>
+          <nav class="detail-tabs">
+            <a href="#" class="active">Overview</a>
+            <a href="#">Attendance</a>
+            <a href="#">Performance</a>
+            <a href="#">Documents</a>
+            <a href="#">Payroll</a>
+          </nav>
+        </div>
+
+        <!-- Mini Stats -->
+        <div class="mini-stat-row">
+          <div class="mini-stat glass-card">
+            <div class="m-value">96.8%</div>
+            <div class="m-label">Attendance Rate</div>
+          </div>
+          <div class="mini-stat glass-card">
+            <div class="m-value">4.6 / 5</div>
+            <div class="m-label">Performance Score</div>
+          </div>
+          <div class="mini-stat glass-card">
+            <div class="m-value">3.2 Yrs</div>
+            <div class="m-label">Tenure at Company</div>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+
+          <!-- Info list -->
+          <div class="panel glass-card">
+            <div class="panel-header"><h3>Personal &amp; Job Information</h3></div>
+            <div class="info-list">
+              <div class="info-row"><span class="i-label"><i class="fa-regular fa-envelope"></i>Email</span><span class="i-value">rohit.sharma@smartemploy.com</span></div>
+              <div class="info-row"><span class="i-label"><i class="fa-solid fa-phone"></i>Phone</span><span class="i-value">+91 98765 43210</span></div>
+              <div class="info-row"><span class="i-label"><i class="fa-solid fa-location-dot"></i>Location</span><span class="i-value">Patna, Bihar, IN</span></div>
+              <div class="info-row"><span class="i-label"><i class="fa-solid fa-building"></i>Department</span><span class="i-value">Engineering</span></div>
+              <div class="info-row"><span class="i-label"><i class="fa-solid fa-id-badge"></i>Designation</span><span class="i-value">Frontend Developer</span></div>
+              <div class="info-row"><span class="i-label"><i class="fa-solid fa-user-tie"></i>Reports To</span><span class="i-value">Monika Kumari</span></div>
+              <div class="info-row"><span class="i-label"><i class="fa-solid fa-calendar-day"></i>Date Joined</span><span class="i-value">12 Jan 2023</span></div>
+              <div class="info-row"><span class="i-label"><i class="fa-solid fa-circle-dot"></i>Status</span><span class="i-value"><span class="badge success">Active</span></span></div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="panel glass-card">
+            <div class="panel-header"><h3>Recent Timeline</h3></div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="t-title">Completed Q2 performance review — rated 4.6/5</div>
+                <div class="t-time">2 days ago</div>
+              </div>
+              <div class="timeline-item">
+                <div class="t-title">Promoted to Senior Frontend Developer track</div>
+                <div class="t-time">3 weeks ago</div>
+              </div>
+              <div class="timeline-item">
+                <div class="t-title">Completed "Advanced React Patterns" internal training</div>
+                <div class="t-time">1 month ago</div>
+              </div>
+              <div class="timeline-item">
+                <div class="t-title">Approved leave request (2 days, family event)</div>
+                <div class="t-time">2 months ago</div>
+              </div>
+              <div class="timeline-item">
+                <div class="t-title">Joined SmartEmploy HR as Frontend Developer</div>
+                <div class="t-time">12 Jan 2023</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <footer class="app-footer">
+          <div class="footer-brand"><span class="brand-mark">SE</span> SmartEmploy HR</div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Help Center</a>
+          </div>
+          <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </footer>
+        <p style="text-align:center; color:var(--gray-400); font-size:0.78rem; padding:16px 0 28px;">© 2026 SmartEmploy HR. Crafted as a frontend portfolio project.</p>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
